@@ -22,6 +22,10 @@ $("#togglemotd").click(function () {
     }
 });
 
+$("dim").click(function () {
+    $("bgoverlay").toggle();
+});
+
 /* chatbox */
 
 $("#modflair").click(function () {

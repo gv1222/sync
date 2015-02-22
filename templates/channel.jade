@@ -6,6 +6,7 @@ html(lang="en")
     link(href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css", rel="stylesheet")
   body
     #wrap
+    #bgoverlay
       nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
         include nav
         mixin navheader()
@@ -49,6 +50,7 @@ html(lang="en")
                 span.input-group-addon Guest login
                 input#guestname.form-control(type="text", placeholder="Name")
             #videowrap.col-lg-7.col-md-7
+              span#dim.glyphicon.glyphicon-adjust.pointer
               p#currenttitle Nothing Playing
               .embed-responsive.embed-responsive-16by9
                 #ytapiplayer.embed-responsive-item
