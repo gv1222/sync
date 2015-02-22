@@ -6,7 +6,6 @@ html(lang="en")
     link(href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css", rel="stylesheet")
   body
     #wrap
-    #bgoverlay
       nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
         include nav
         mixin navheader()
@@ -214,6 +213,7 @@ html(lang="en")
           .modal-footer
             button.btn.btn-default(type="button", data-dismiss="modal") Close
     #pmbar
+    #bgoverlay
     include footer
     mixin footer()
     script(src=sioSource)

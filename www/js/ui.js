@@ -22,8 +22,8 @@ $("#togglemotd").click(function () {
     }
 });
 
-$("dim").click(function () {
-    $("bgoverlay").toggle();
+$("#dim").click(function () {
+    $("#bgoverlay").toggle();
 });
 
 /* chatbox */
