@@ -593,7 +593,6 @@ table td {
     border-top-width: 0;
 }
 
-<<<<<<< HEAD
 #bgoverlay {
     position: fixed;
     top: 0;
@@ -617,7 +616,8 @@ table td {
     margin-top: 7px;
     margin-right: 6px;
     float: right;
-=======
+}
+
 #emotelist table {
     margin: auto;
 }
@@ -663,7 +663,6 @@ li.vjs-menu-item.vjs-selected {
 
 .video-js video::-webkit-media-text-track-container {
     bottom: 50px;
->>>>>>> de02cdbeff954e8cd77a52542da3aeabe5e758f1
 }
 
 #dim {
