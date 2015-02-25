@@ -703,7 +703,7 @@ function applyOpts() {
     if ($("#usertheme").attr("href") !== USEROPTS.theme) {
         var old = $("#usertheme").attr("id", "usertheme_old");
         var theme = USEROPTS.theme;
-        if (theme === "default") {
+        if (theme === "default" || "slate" || "light" || "cyborg") {
             theme = "/css/themes/modern.css";
         }
         $("<link/>").attr("rel", "stylesheet")
