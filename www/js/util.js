@@ -1310,7 +1310,8 @@ function parseMediaLink(url) {
         };
     }
 
-    if ((m = url.match(/(?:docs|drive)\.google\.com\/file\/d\/([^\/]*)/))) {
+    if ((m = url.match(/(?:docs|drive)\.google\.com\/file\/d\/([^\/]*)/)) ||
+        (m = url.match(/drive\.google\.com\/open\?id=([^&]*)/))) {
         return {
             id: m[1],
             type: "gd"
@@ -2018,7 +2019,7 @@ function queueMessage(data, type) {
                 data.link + "</a>";
     }
     makeAlert(title, text, type)
-        .addClass("qfalert qf-" + type)
+        .addClass("linewrap qfalert qf-" + type)
         .appendTo($("#queuefail"));
 }
 
@@ -2810,6 +2811,9 @@ function googlePlusSimulator2014(data) {
 
     /* Convert youtube-style quality key to vimeo workaround quality */
     var q = USEROPTS.default_quality || "auto";
+    if (q === "highres") {
+        q = "hd1080";
+    }
 
     var fallbacks = ["hd1080", "hd720", "large", "medium", "small"];
     var i = fallbacks.indexOf(q);
