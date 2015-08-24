@@ -1,0 +1,25 @@
+From 64886f51a6aa02b724f6ce2ffa04dbb40dba848f Mon Sep 17 00:00:00 2001
+From: Graham <gvelji@gmail.com>
+Date: Mon, 2 Mar 2015 12:50:18 -0500
+Subject: [PATCH] Update footer
+
+---
+ templates/footer.jade | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/templates/footer.jade b/templates/footer.jade
+index 060e13f..7855c5c 100644
+--- a/templates/footer.jade
++++ b/templates/footer.jade
+@@ -2,7 +2,7 @@ mixin footer
+   footer#footer
+     .container
+       p.text-muted.credit.
+-        Copyright &copy; 2013-2015 Calvin Montgomery&nbsp;&middot;&nbsp;<a href="https://github.com/calzoneman/sync">GitHub</a>&nbsp;&middot;&nbsp;<a href="/useragreement">User Agreement</a>&nbsp;&middot;&nbsp;<a href="/contact">Contact</a>&nbsp;&middot;&nbsp;<a href="https://github.com/calzoneman/sync/wiki">Wiki</a>
++        Copyright &copy; 2013-2015 Calvin Montgomery&nbsp;&middot;&nbsp;<a href="https://github.com/calzoneman/sync">GitHub</a>&nbsp;&middot;&nbsp;<a href="/useragreement">User Agreement</a>&nbsp;&middot;&nbsp;<a href="/contact">Contact</a>
+   script(src="/js/jquery-1.11.0.min.js")
+   // Must be included before jQuery-UI since jQuery-UI overrides jQuery.fn.button
+   // I should really abandon this crap one day
+-- 
+1.9.5.msysgit.0
+
