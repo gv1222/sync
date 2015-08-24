@@ -665,3 +665,9 @@ li.vjs-menu-item.vjs-selected {
     bottom: 50px;
 >>>>>>> de02cdbeff954e8cd77a52542da3aeabe5e758f1
 }
+
+#dim {
+    margin-top: 7px;
+    margin-right: 6px;
+    float: right;
+}
