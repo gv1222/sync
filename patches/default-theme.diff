@@ -1,0 +1,41 @@
+From 187c5d76eb105773d6bd02d18f518e1a37a40842 Mon Sep 17 00:00:00 2001
+From: gv1222 <gvelji@gmail.com>
+Date: Sun, 23 Aug 2015 21:33:28 -0400
+Subject: [PATCH] Change modern theme to default
+
+---
+ templates/head.jade | 2 +-
+ www/js/util.js      | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/templates/head.jade b/templates/head.jade
+index bc4ecc1..b73962e 100644
+--- a/templates/head.jade
++++ b/templates/head.jade
+@@ -7,7 +7,7 @@ mixin head()
+   title= siteTitle
+   link(href="/css/sticky-footer-navbar.css", rel="stylesheet")
+   link(href="/css/cytube.css", rel="stylesheet")
+-  link(id="usertheme", href="/css/themes/slate.css", rel="stylesheet")
++  link(id="usertheme", href="/css/themes/modern.css", rel="stylesheet")
+   script(src="/js/theme.js")
+   //[if lt IE 9]
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+diff --git a/www/js/util.js b/www/js/util.js
+index fd13a2e..639f44e 100644
+--- a/www/js/util.js
++++ b/www/js/util.js
+@@ -703,8 +703,8 @@ function applyOpts() {
+     if ($("#usertheme").attr("href") !== USEROPTS.theme) {
+         var old = $("#usertheme").attr("id", "usertheme_old");
+         var theme = USEROPTS.theme;
+-        if (theme === "default") {
+-            theme = "/css/themes/slate.css";
++        if (theme === "default" || "slate" || "light" || "cyborg") {
++            theme = "/css/themes/modern.css";
+         }
+         $("<link/>").attr("rel", "stylesheet")
+             .attr("type", "text/css")
+-- 
+1.9.5.msysgit.0
+
